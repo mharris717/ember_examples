@@ -1,0 +1,24 @@
+---
+title: Welcome to Middleman
+---
+
+<script type="text/x-handlebars" data-template-name="application">
+  <h1>Ember Examples App</h1>
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="examples">
+  <h2>Examples</h2>
+  {{#each example in this}}
+    {{#linkTo example example}}{{example.name}}{{/linkTo}}<br>
+  {{/each}}
+  <br>
+  {{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="example">
+  <h3>Example</h3>
+  {{name}}
+</script>
+
+Stuff
